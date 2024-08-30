@@ -1,13 +1,14 @@
-import React from 'react'
+import './App.css'
 import './index.css'
 import '@fontsource-variable/saira';
+import Header from './components/Header';
 
 function App() {
   
   return (
-    <h1 className="text-8xl font-normal text-red-400">
-      Hello world!
-    </h1>
+    <div >
+      <Header />
+    </div>
   )
 }
 
