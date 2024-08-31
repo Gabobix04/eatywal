@@ -1,10 +1,13 @@
 import logo from '../assets/img/logoWall.png';
 import arrow from '../assets/img/arrow.png';
+import lupa from '../assets/img/lupa.png';
+import notificacion from '../assets/img/noti.png';
+import help from '../assets/img/help.png';
 
 function Header() {
   return (
     <>
-        <header className='flex px-4 py-3 border-b border-black'>
+        <header className='flex px-4 py-3 border-b border-black cursor-pointer'>
             <div className='flex items-center gap-3 mr-10'>
                 <img className='size-10' src={logo} alt="Logo" />
                 <h1 className='text-2xl font-semibold'>Eatywall</h1>
@@ -39,7 +42,24 @@ function Header() {
                     Crear
                 </button>
             </div>
-
+    
+            {/*Buscador*/}
+            <div className='flex items-center ml-72 px-2 pr-16 border border-gray-400 rounded-xl'>
+                <img className='size-4 mr-2' src={lupa} alt="lupa" />
+                <input
+                    className='w-full outline-none' 
+                    type="text" 
+                    placeholder='Buscar'
+                />
+            </div>
+            
+            {/*Iconos*/}
+            <div className='flex items-center ml-6 cursor-pointer'>
+                <img className='size-5 hover:brightness-125 ' src={notificacion} alt="Notificacion" />
+                <img className='size-5 hover:brightness-125 ml-6' src={help} alt="Help" />
+                <img className='size-5 hover:brightness-125 ml-6' src={Image} alt="Perfil" />
+            </div>
+            
         </header>
     </>
   );
