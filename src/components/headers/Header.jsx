@@ -52,7 +52,7 @@ function Header() {
                     placeholder='Buscar'
                 />
             </div>
-            
+
             {/*Iconos*/}
             <div className='flex items-center ml-6 cursor-pointer'>
                 <img className='size-5 hover:brightness-125 ' src={notificacion} alt="Notificacion" />

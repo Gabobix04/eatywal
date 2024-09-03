@@ -1,13 +1,16 @@
 import './App.css'
 import './index.css'
 import '@fontsource-variable/saira';
-import Header from './components/Header';
+import '@fontsource-variable/inter';
+import HeaderInicio from './components/headers/HeaderInicio';
+import Footer from './components/footer/Footer';
 
 function App() {
   
   return (
     <div >
-      <Header />
+      <HeaderInicio />
+      <Footer/>
     </div>
   )
 }
