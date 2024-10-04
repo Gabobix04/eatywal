@@ -9,7 +9,7 @@ function Footer() {
           <p className='text-sm font-normal'>Copyright &copy; EatyWall</p>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 ">
           <a href='#' className='text-sm fotbn-semibold mr-4'>Politica de privacidad</a>
           <a href='#' className='text-sm fotbn-semibold mr-4'>Terminos</a>
           <a href='#' className='text-sm fotbn-semibold'>Aviso Legal</a>

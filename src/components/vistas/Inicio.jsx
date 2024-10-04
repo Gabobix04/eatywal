@@ -1,16 +1,45 @@
 import lupaCaja from '../../assets/img/lupa-caja.png';
 import tuercas from '../../assets/img/tuercas.png';
 import rompecabezas from '../../assets/img/rompecabezas.png';
+import imagen_inicio from '../../assets/img/imagen_inicio.png';
 
-function Inicio () {
-  return (
-    <div className="flex items-center max-w-7xl m-auto my-20 flex-col ">
-        <div>
-            <p className="text-base font-semibold">MANTENTE AL TANTO</p>
-            <h1 className="text-3xl font-bold mt-2">Aplicacion en Construcción</h1>
-            <p className="text-xl font-normal mt-6">Servicio eatywall es una herramienta de gestion de proyectos <br /> 
-                y flujos de trabajo para casi cualquier cosa.</p>
-            
+function Inicio() {
+    return (
+        <div className="flex items-center max-w-7xl m-auto my-20 flex-col">
+            <div>
+                <div className='bg-gradient-to-r from-blue-500 to-cyan-500 items-center'>
+                    <div className='flex justify-between items-center'>
+                        <div className=''>
+                            <h1 className="text-3xl font-bold mt-2 text-white">Empieza tu próximo <br />proyecto con buen pie</h1>
+                            <p className="text-xl font-normal mt-6 text-white">Estructura y alinea los objetivos de los equipos, <br />
+                                divide el trabajo en tareas gestionables y entérate <br /> de quién trabaja en qué.
+                            </p>
+                        </div>
+
+                        <div>
+                            <img className='w-[500px]' src={imagen_inicio} alt="Imagen de inicio" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <button className='px-6 py-3 mt-9 text-white bg-[#6f59c2] hover:bg-violet-400 rounded-full'>
+                            <p className='text-sm font-semibold'>Comenzar</p>
+                        </button>
+
+                        <button className='px-6 py-3 mt-9 ml-4 text-[#6f59c2] bg-white border-2 border-violet-500 rounded-full' >
+                            <p className='text-sm font-semibold'>Mira como funciona</p>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div className='mt-20'>
+                    <p className="text-base font-semibold">MANTENTE AL TANTO</p>
+                    <h1 className="text-3xl font-bold mt-2">Haz más con EatyWall</h1>
+                    <p className="text-xl font-normal mt-6">Tu herramienta favorita de gestion de proyectos y flujos de<br />
+                        trabajo para casi cualquier cosa.</p>
+                </div>
+
                 <div className="flex items-center ">
                     <div className="flex w-[350px] h-[380px] bg-[#f2f8ff] mt-14 p-3 flex-col">
                         <img className='size-24 ml-3 mt-4 ' src={lupaCaja} alt="Objetivo" />
@@ -33,14 +62,14 @@ function Inicio () {
 
                     </div>
                 </div>
-                
+
                 <div className='mt-10'>
                     <p className='text-xl font-medium mb-2'>SOPORTE</p>
                     <a className='text-xl font-medium text-blue-600 underline' href="">Solicita información</a>
                 </div>
             </div>
-    </div>
-  )
+        </div>
+    )
 }
 
 export default Inicio;
