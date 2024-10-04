@@ -5,33 +5,39 @@ import imagen_inicio from '../../assets/img/imagen_inicio.png';
 
 function Inicio() {
     return (
-        <div className="flex items-center max-w-7xl m-auto my-20 flex-col">
-            <div>
-                <div className='bg-gradient-to-r from-blue-500 to-cyan-500 items-center'>
-                    <div className='flex justify-between items-center'>
-                        <div className=''>
-                            <h1 className="text-3xl font-bold mt-2 text-white">Empieza tu próximo <br />proyecto con buen pie</h1>
-                            <p className="text-xl font-normal mt-6 text-white">Estructura y alinea los objetivos de los equipos, <br />
-                                divide el trabajo en tareas gestionables y entérate <br /> de quién trabaja en qué.
-                            </p>
-                        </div>
+        <div>
 
+            <div className='bg-gradient-to-r from-blue-500 to-cyan-500 items-center py-20'>
+                <div className='max-w-7xl m-auto'>
+                    <div className='flex justify-between items-center'>
+                        <div className='flex flex-col gap-12'>
+                            <div>
+                                <h1 className="text-3xl font-bold mt-2 text-white">Empieza tu próximo <br />proyecto con buen pie</h1>
+                                <p className="text-xl font-normal mt-6 text-white">Estructura y alinea los objetivos de los equipos, <br />
+                                    divide el trabajo en tareas gestionables y entérate <br /> de quién trabaja en qué.
+                                </p>
+                            </div>
+                            <div>
+                                <button className='px-6 py-3 text-white bg-[#6f59c2] hover:bg-violet-400 rounded-full'>
+                                    <p className='text-sm font-semibold'>Comenzar</p>
+                                </button>
+
+                                <button className='px-6 py-3 ml-4 text-[#6f59c2] bg-white border-2 border-violet-500 rounded-full' >
+                                    <p className='text-sm font-semibold'>Mira como funciona</p>
+                                </button>
+                            </div>
+                        </div>
                         <div>
                             <img className='w-[500px]' src={imagen_inicio} alt="Imagen de inicio" />
                         </div>
                     </div>
 
-                    <div>
-                        <button className='px-6 py-3 mt-9 text-white bg-[#6f59c2] hover:bg-violet-400 rounded-full'>
-                            <p className='text-sm font-semibold'>Comenzar</p>
-                        </button>
-
-                        <button className='px-6 py-3 mt-9 ml-4 text-[#6f59c2] bg-white border-2 border-violet-500 rounded-full' >
-                            <p className='text-sm font-semibold'>Mira como funciona</p>
-                        </button>
-                    </div>
 
                 </div>
+
+            </div>
+
+            <div className='max-w-7xl m-auto'>
 
                 <div className='mt-20'>
                     <p className="text-base font-semibold">MANTENTE AL TANTO</p>
@@ -68,6 +74,9 @@ function Inicio() {
                     <a className='text-xl font-medium text-blue-600 underline' href="">Solicita información</a>
                 </div>
             </div>
+
+
+
         </div>
     )
 }
